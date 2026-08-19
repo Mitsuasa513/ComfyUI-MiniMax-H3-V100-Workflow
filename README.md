@@ -27,6 +27,8 @@ WORKFLOWS FOR MINIMAX H3 IN COMFYUI W/ V100
 5. IF OOM CHANGE `head_chunks` AND `chunks` , TRY SMALLEST VALUE BEFORE LAST OMM AND SUCCESS;
 6. --lowvram IS RECOMMANDED IF UR COMPUTER DON'T HAVE ENOUGH ~~MONEY~~ MEMORY.
 
+## 使用说明
+
 1. 安装所需自定义节点;
 2. 下载对应模型并放入 ComfyUI 模型目录;
 3. 将工作流导入 ComfyUI;
