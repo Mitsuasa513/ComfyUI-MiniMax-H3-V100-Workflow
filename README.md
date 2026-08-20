@@ -7,6 +7,22 @@ THIS IS A WORKFLOW OPTIMIZED FOR LEGACY BUT CHEAP CARD——V100, BOTH 16 / 32G 
 适用于V100在 MiniMax H3 的 ComfyUI 视频生成工作流。
 WORKFLOWS FOR MINIMAX H3 IN COMFYUI W/ V100
 
+## 性能表现 / PERFORMANCE REFERENCE
+
+GRAPHICS CARD / 显卡 ：V100-SXM2-32G RAM / 内存：96G DDR4
+
+| 设置 | 格式 | 输出时间（分钟） & 品质得分 |
+|---|---|---|
+| 4步LORA+4步           | 480P24帧  5秒    | 349s （≈6分钟）   =4  |
+| 4步LORA+6步           | 480P24帧  5秒    | 387s（≈7分钟）    =5  |
+| 4步LORA+8步           | 480P24帧  5秒    | 682s（≈12分钟）   =7  |
+| 4步LORA+4步           | 480P24帧  10秒   | 829s （≈14分钟）   =6  |
+| 4步LORA+8步           | 480P24帧  10秒   | 1662s（≈28分钟）   =7  |
+| 4步LORA4步+防爆显存   | 720P24帧  5秒     | 1154s （≈20分钟）   =8.5|
+| 4步LORA6步+防爆显存   | 720P24帧  5秒     | 1549s （≈26分钟）  =9  |
+| 无LORA+20X           | 480P24帧  5秒     | 1284s （≈22分钟）   =10 |
+
+
 ## Tested Configuration
 
 - GPU: Tesla V100 32GB
