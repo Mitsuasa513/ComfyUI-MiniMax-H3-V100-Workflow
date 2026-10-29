@@ -19,14 +19,17 @@ WORKFLOWS FOR MINIMAX H3 IN COMFYUI W/ V100 (ALSO CAN USE FOR 30 40 50 SERIES GR
 
 NOTE: 720P HERE MEANS PARAMETER 0.7 (720P-) NOT 0.9 ACTUAL 720P BECAUSE IT IS TESTED AND IS A BALANCE BETWEEN TIME ELAPSE AND QUALITY:)  
 备注：这里的720P指的准720P（0.7）不是0.9因为测试下来是质量和速度的平衡的甜点区：）    
+问题咨询留言（Questions or suggestions）：这里或者抖音/ HERE OR DOUYIN：行者十六 
 
 ## 20261029 更新 / UPDATE
 ### 001 对工作流默认参数进行了优化
 +++ 默认参数现在是 480P（0.4）5秒，方便上手试跑。  
 +++ 在本仓库加入了样图，使用者可以利用样图配合自带提示词进行试跑。（开箱即用测试）  
++++ 第一版使用了未剪枝版模型，从这版开始改成了剪枝版，同时支持16G和32G的卡，对16G V100更友好。  
 ### 001 Optimized the default parameters of the workflows  
 +++ The default parameters are now 480P (0.4) for 5 seconds, making it easy for new users to try them out.  
 +++ Sample images have been added to this repository. Users can use these samples together with the built-in prompts for an out-of-the-box test.  
++++ The first version used the unpruned model. Starting with this version, it has been switched to the pruned model and now supports both 16 GB and 32 GB card configurations, with better compatibility for 16 GB V100 systems.  
 <img src="SAMPLE/sample1.png" alt="sample1" width="205">  
 ### 002 搜集整合、荟萃了一些新的加速节点，现在更新了新的更强的工作流  
 +++ 单图生视频工作流加入了新版的T8加速节点和Adaptive Cache节点（经过实验，加速性能类似，因此选择权交给用户）和配置好的实验加速，可以让V100在480P5秒的设置下以<strong>大约200秒</strong>左右的速度生成一段视频。  
