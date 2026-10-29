@@ -1,4 +1,12 @@
-# ComfyUI-MiniMax-H3-V100-Workflow
+<p align="center">
+  <img
+    src="SAMPLE/banner.png"
+    alt="Banner"
+    width="100%">
+</p>
+
+
+# ComfyUI-MiniMax-H3-V100-WORKFLOW
 # THIS IS A WORKFLOW OPTIMIZED FOR LEGACY BUT CHEAP CARD——V100, BOTH 16 / 32G SUPPORTED  
 # 行者十六的V100专用工作流，16G / 32G都好使
 
@@ -11,6 +19,26 @@ WORKFLOWS FOR MINIMAX H3 IN COMFYUI W/ V100 (ALSO CAN USE FOR 30 40 50 SERIES GR
 
 NOTE: 720P HERE MEANS PARAMETER 0.7 (720P-) NOT 0.9 ACTUAL 720P BECAUSE IT IS TESTED AND IS A BALANCE BETWEEN TIME ELAPSE AND QUALITY:)  
 备注：这里的720P指的准720P（0.7）不是0.9因为测试下来是质量和速度的平衡的甜点区：）    
+
+## 20261029 更新 / UPDATE
+### 001 对工作流默认参数进行了优化
++++ 默认参数现在是 480P（0.4）5秒，方便上手试跑。  
++++ 在本仓库加入了样图，使用者可以利用样图配合自带提示词进行试跑。（开箱即用测试）  
+### 001 Optimized the default parameters of the workflows  
++++ The default parameters are now 480P (0.4) for 5 seconds, making it easy for new users to try them out.  
++++ Sample images have been added to this repository. Users can use these samples together with the built-in prompts for an out-of-the-box test.  
+<img src="SAMPLE/sample1.png" alt="sample1" width="205">  
+### 002 搜集整合、荟萃了一些新的加速节点，现在更新了新的更强的工作流  
++++ 单图生视频工作流加入了新版的T8加速节点和Adaptive Cache节点（经过实验，加速性能类似，因此选择权交给用户）和配置好的实验加速，可以让V100在480P5秒的设置下以<strong>大约200秒</strong>左右的速度生成一段视频。  
++++ 多元素生视频工作流也更新了T8加速节点。V100在准720P（0.7）5秒的设置下以<strong>大约750秒</strong>左右的速度生成一段视频。  
++++ 本次鸣谢T8、AC加速作者、小方老师和广大网友提供的V100实验环境，工作流在V100 16G+64G内存上测试通过。  
+### 002 New acceleration nodes were collected, consolidated, and curated. The workflows have now been updated with stronger performance.  
++++ The single-image-to-video workflow now includes the new T8 acceleration nodes and the Adaptive Cache node. Experiments showed that their acceleration performance is comparable, so the choice is left to the user. The preconfigured experimental acceleration allows a V100 to generate a 480P, 5-second video in <strong>about 220 seconds</strong>.  
++++ The multi-element video generation workflow has also been updated with the T8 acceleration nodes. On a V100 at quasi-720P (0.7) for 5 seconds, it generates a video in about <strong> 750 seconds</strong>.  
++++ We would like to thank T8/AC accelerator authors, xiaofang and other community members as V100 16G cards test environment providers, for providing the V100s experimental acceleration environments. The workflows were tested and passed on a V100 with 16 GB of VRAM and 64 GB of system memory.  
+<img src="SAMPLE/sample2.png" alt="sample2" width="205">  
+
+
 
 
 ## 20260911更新 / UPDATE
